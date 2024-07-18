@@ -1,0 +1,91 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Compatibilidade com IE -->
+    <title>Pet Shop</title> <!-- Título da página -->
+    <link rel="stylesheet" href="css/petshop.css"> <!-- Link para o CSS principal -->
+    <link rel="stylesheet" href="css/agendamento.css"> <!-- Link para o CSS da página de agendamento -->
+</head>
+<body>
+<header>
+    <div class="container"> <!-- Contêiner para organizar elementos do cabeçalho -->
+        <img src="img/logo-pet-2.png" alt="Logo Pet"> <!-- Imagem do logotipo -->
+        <h1>pet shop</h1> <!-- Título da loja -->
+        <nav class="menu"> <!-- Menu de navegação -->
+            <a href="index.html">HOME</a> <!-- Link para a página inicial -->
+            <a href="loja.html">LOJA</a> <!-- Link para a página da loja -->
+            <a class="active" href="agendamento.html">AGENDAMENTO</a> <!-- Link para a página de agendamento, marcado como ativo -->
+        </nav>
+    </div>
+</header>
+
+<!-- INÍCIO CONTEÚDO DO SITE -->
+<section>
+    <center>
+        <h1 style="color: #0066cc;">Preencha as Informações</h1> <!-- Título da seção -->
+    </center>
+    
+    <form onsubmit="return validaForm()"> <!-- Formulário com validação -->
+        <input id="nome" type="text" name="nome" placeholder="Nome do Tutor" required> <!-- Nome do tutor -->
+        <input id="endereco" type="text" name="endereco" placeholder="Endereço" required> <!-- Endereço -->
+        <input id="telefone" type="tel" name="telefone" placeholder="Telefone" required> <!-- Telefone -->
+        <input id="email" type="email" name="email" placeholder="E-mail" required> <!-- E-mail -->
+        
+        <input id="nomePet" type="text" name="nomePet" placeholder="Nome do Pet" required> <!-- Nome do pet -->
+        <select id="pets" name="pets" required>
+            <option value="" disabled selected>Selecione uma Espécie</option> <!-- Placeholder da seleção -->
+            <option value="cachorro">Cachorro</option> <!-- Opção para cachorro -->
+            <option value="gato">Gato</option> <!-- Opção para gato -->
+        </select>
+        <input id="raça" type="text" name="raça" placeholder="Raça" required> <!-- Raça do pet -->
+        <input type="date" name="dia" required> <!-- Data do agendamento -->
+        <input type="time" name="horario" required> <!-- Horário do agendamento -->
+
+        <br><br>
+        
+        <legend>Escolha os serviços desejados:</legend>
+        
+        <div>
+            <input id="veterinario" type="checkbox" name="servicos" value="veterinario" /> 
+            <label for="veterinario"> Veterinário </label> <!-- Serviço veterinário -->
+        </div>
+        <div>
+            <input id="banho" type="checkbox" name="servicos" value="banho" /> 
+            <label for="banho"> Banho </label> <!-- Serviço de banho -->
+        </div>
+        <div>
+            <input id="tosa" type="checkbox" name="servicos" value="tosa" /> 
+            <label for="tosa"> Tosa </label> <!-- Serviço de tosa -->
+        </div>
+        <div>
+            <input id="adestramento" type="checkbox" name="servicos" value="adestramento" /> 
+            <label for="adestramento"> Adestramento </label> <!-- Serviço de adestramento -->
+        </div>
+        
+        <br>
+        
+        <label for="comentarios">Informações Adicionais:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="30"></textarea> <!-- Campo para comentários adicionais -->
+        
+        <div>
+            <input type="checkbox" id="termos" name="termos" required>
+            <label for="termos">Aceito os termos e condições</label> <!-- Aceite dos termos -->
+        </div>
+	</form> 
+        
+        <button type=submit>AGENDAR =)</button> <!-- Botão para enviar o formulário -->
+        
+        <!-- Mensagem de erro, gerada por JavaScript -->
+        <p id="erro"></p> 
+  
+</section>
+
+<!-- FIM CONTEÚDO DO SITE -->
+<footer>
+    <!-- O footer não precisa ter heading -->
+    Paulista/PE <!-- Localização -->
+</footer>
+<script src="js/contato.js"></script> <!-- Script para validação e interação -->
+</body>
+</html>

@@ -1,0 +1,65 @@
+.menu a.active {
+    background: #4a8506; /* Destaca o item do menu ativo com um fundo verde escuro */
+}
+
+section {
+    margin: 60px auto; /* Centraliza a seção com uma margem superior/inferior */
+    background: #ffffff; /* Define um fundo branco */
+    width: 588px; /* Largura fixa para a seção */
+    min-height: 300px; /* Garante uma altura mínima */
+    border: 2px solid #4a8506; /* Adiciona uma borda verde */
+    border-radius: 8px; /* Arredonda os cantos */
+    text-align: center; /* Centraliza o texto dentro da seção */
+    padding: 8px; /* Adiciona padding dentro da seção */
+}
+
+.miniaturas img {
+    width: 110px; /* Define uma largura fixa para as imagens */
+    border: 1px solid #4a8506; /* Adiciona uma borda verde às imagens */
+    border-radius: 4px; /* Arredonda levemente os cantos das imagens */
+    transition: transform 0.5s; /* Transição suave para transformações */
+}
+
+.miniaturas img:hover {
+    transform: scale(1.1) rotate(5deg); /* Escala e rota a imagem ao passar o mouse */
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
+}
+
+.produto {
+    border: 1px solid #ccc; /* Borda cinza claro ao redor dos produtos */
+    padding: 10px; /* Adiciona padding dentro dos contêineres de produtos */
+    margin: 10px; /* Margem entre os contêineres de produtos */
+    border-radius: 5px; /* Arredonda os cantos dos contêineres de produtos */
+    background-color: #fff; /* Define a cor de fundo como branca */
+}
+
+.produto h2 {
+    font-size: 20px; /* Define o tamanho da fonte para os títulos dos produtos */
+    color: #333; /* Cor do texto cinza escuro */
+}
+
+button {
+    background-color: #4CAF50; /* Fundo verde para os botões */
+    color: white; /* Cor do texto branca */
+    border: none; /* Sem borda */
+    padding: 10px; /* Padding dentro dos botões */
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
+    border-radius: 5px; /* Arredonda os cantos dos botões */
+}
+
+button:hover {
+    background-color: #4a8506; /* Verde mais escuro ao passar o mouse sobre o botão */
+}
+
+.form-container {
+    margin-top: 20px; /* Margem superior para espaçamento */
+    padding: 20px; /* Padding dentro dos contêineres de formulário */
+    background-color: #fff; /* Fundo branco */
+    border-radius: 5px; /* Arredonda os cantos */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+}
+
+h1 {
+    text-align: center; /* Centraliza os títulos principais */
+    color: #4CAF50; /* Cor do texto verde */
+}
